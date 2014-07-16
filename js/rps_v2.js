@@ -3,6 +3,7 @@ function user(humanChoice) {
 var userChoice = humanChoice;
 var computerChoice = Math.random();
 var x=document.getElementById("compChoice");
+var y=document.getElementById("resulting");
 // document.getElementByClassName("border")[0].classList.remove("border");
 document.getElementById("white_rock").classList.remove("border");
 document.getElementById("white_paper").classList.remove("border");
@@ -26,31 +27,31 @@ document.getElementById("white_scissor").classList.remove("border");
 
 var compare = function(choice1, choice2) {
     if(choice1 === choice2) {
-        alert("The result is a tie");
+        y.innerHTML = "Its a DRAW!";
         
     }
     else if (choice1 === "rock") {
         if(choice2 === "scissors") {
-            alert( "you win")
+            y.innerHTML = "YOU WIN";
         }
         else {
-            alert( "you lose")
+            y.innerHTML = "YOU LOSE";
         }
     }
     else if (choice1 === "paper") {
         if(choice2 === "rock") {
-            alert( "you win")
+            y.innerHTML = "YOU WIN";
         }
         else {
-            alert( "you lose")
+            y.innerHTML = "YOU LOSE";
         }
     }
     else if (choice1 === "scissors") {
         if(choice2 === "paper") {
-            alert( "you win")
+            y.innerHTML = "YOU WIN";
         }
         else {
-            alert( "you lose")
+            y.innerHTML = "YOU LOSE";
         }
     }
 }

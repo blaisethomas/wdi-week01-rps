@@ -25,14 +25,17 @@
 #black_scissor:hover {
 	border: red 10px solid;
 	border-radius: 50%;
+	padding: 30px;
 }
 #black_paper:hover {
 	border: red 10px solid;
 	border-radius: 50%;
+	padding: 30px;
 }
 #black_rock:hover {
 	border: red 10px solid;
 	border-radius: 50%;
+	padding: 30px;
 }
 .border {
 	border: red 10px solid;
