@@ -1,45 +1,53 @@
-#game{
-	padding-top: 110px;
-	margin-top:200px;
-	max-width: 757px;
-	margin: auto;
-	width: 82%;
-	float: right;
+#white_scissor {
+	max-width:50px;
+	padding: 40px;
+}
+#white_paper {
+	max-width: 50px;
+	padding: 40px;
+}
+#white_rock {
+	max-width:50px;
+	padding: 40px;
 }
 #black_scissor {
-	max-width:45px;
-	padding: 30px;
-
+	max-width:50px;
+	padding: 40px;
 }
 #black_paper {
-	max-width:75px;
-	padding: 30px;
-
+	max-width: 50px;
+	padding: 40px;
 }
 #black_rock {
-	max-width:65px;
-	padding: 30px;
-
+	max-width:50px;
+	padding: 40px;
 }
-
 #black_scissor:hover {
 	border: red 10px solid;
 	border-radius: 50%;
-	min-width:60px;
-	
-
 }
 #black_paper:hover {
 	border: red 10px solid;
 	border-radius: 50%;
-	min-width:100px;
-	
-
 }
 #black_rock:hover {
 	border: red 10px solid;
 	border-radius: 50%;
-	min-width:100px;
-	
-
+}
+.border {
+	border: red 10px solid;
+	border-radius: 50%;
+}
+#button2{
+	max-width: 100px;
+	float:right;
+}
+#game {
+	padding-top: 20px;
+	text-align: center;
+	min-width: 535px;
+}
+.text {
+	text-align: center;
+	margin-top:130px;
 }

@@ -3,14 +3,24 @@
 	<head> 
 		<title>Rock, Paper, Scissors ! </title>
 		<link rel="stylesheet" href="css/main_style.css"/>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<script src="js/rps_v2.js"></script> 
 	</head>
 	<body>
+		<div class="text"> Choose your weapon: </div>
 		<div id="game">
-		    <img src="img/black_rock.jpg" id="black_rock" onClick="user('rock')"/>
+			<img src="img/black_rock.jpg" id="black_rock" onClick="user('rock')"/>
 		    <img src="img/black_paper.jpg" id="black_paper" onClick="user('paper')"/>
 		    <img src="img/black_scissor.jpg" id="black_scissor" onClick="user('scissors')"/>
-		    <p 
+		    <br/>
+
+		    <div>Computer chooses:</div><div id="compChoice"></div>
+
+		    
+		    <img src="img/white_rock.jpg" id="white_rock"/>
+		    <img src="img/white_paper.jpg" id="white_paper"/>
+		    <img src="img/white_scissor.jpg" id="white_scissor"/>
+
 		</div>
 	</body>
 </html>
