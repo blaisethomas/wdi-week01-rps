@@ -1,76 +1,83 @@
-$(document).ready(function(){
-
-    //player move animations
-    $("#black_rock").click(function(){
-        $("#black_rock").addClass('animated rubberBand')    
-    });
-
-    $("#black_scissor").click(function(){
-        $("#black_scissor").addClass('animated rubberBand')
-    });
-
-    $("#black_paper").click(function(){
-        $("#black_paper").addClass('animated rubberBand')
-    });
-});
-
 function user(humanChoice) {
     console.log("you choose " + humanChoice) 
+    
+      
+
+    
+
     var computerChoice = Math.random();
-    console.log("computer chooses " + computerChoice);  
-
-    //reset animations 
-    //all animations with thanks daneden => http://daneden.github.io/animate.css/
-    $("#black_rock").removeClass();
-    $("#black_scissor").removeClass();
-    $("#black_paper").removeClass();
-    $("#white_rock").removeClass();
-    $("#white_scissor").removeClass();
-    $("#white_paper").removeClass();
-
-    // computer's move animations
     if(computerChoice < 0.34) {
 	    computerChoice = "rock";
-        $("#white_rock").addClass('animated rubberBand');
     } else if(computerChoice <= 0.67) {
 	    computerChoice = "paper";
-        $("#white_paper").addClass('animated rubberBand');
     } else {
 	    computerChoice = "scissors";
-        $("#white_scissor").addClass('animated rubberBand');
     } 
+    console.log("computer chooses " + computerChoice);
 
     // win check
     var compare = function(choice1, choice2) {
         if(choice1 === choice2) {
-            // y.innerHTML = "Its a DRAW!";
             $("img").addClass('animated wobble')   
         } else if (choice1 === "rock") {
             if(choice2 === "scissors") {
-                // y.innerHTML = "YOU WIN";
+                $("#black_paper").addClass('animated fadeOut');
+                $("#black_scissor").addClass('animated fadeOut');
+                $("#white_paper").addClass('animated fadeOut');
+                $("#white_rock").addClass('animated fadeOut');
+                $("#black_rock").addClass('animated pulse');
+                $("#white_scissor").addClass('animated bounceOutDown');
             } else {
-                // y.innerHTML = "YOU LOSE";
+                $("#black_paper").addClass('animated fadeOut');
+                $("#black_scissor").addClass('animated fadeOut');
+                $("#white_rock").addClass('animated fadeOut');
+                $("#white_scissor").addClass('animated fadeOut');
+                $("#black_rock").addClass('animated bounceOutUp');
+                $("#white_paper").addClass('animated pulse');
             }
         } else if (choice1 === "paper") {
             if(choice2 === "rock") {
-                // y.innerHTML = "YOU WIN";
-            }
-            else {
-                // y.innerHTML = "YOU LOSE";
+                $("#black_paper").addClass('animated pulse');
+                $("#white_rock").addClass('animated bounceOutDown');
+                $("#black_rock").addClass('animated fadeOut');
+                $("#black_scissor").addClass('animated fadeOut');
+                $("#white_scissor").addClass('animated fadeOut');
+                $("#white_paper").addClass('animated fadeOut');
+            } else {
+                $("#black_paper").addClass('animated bounceOutUp');
+                $("#white_scissor").addClass('animated pulse');
+                $("#black_rock").addClass('animated fadeOut');
+                $("#black_scissor").addClass('animated fadeOut');
+                $("#white_rock").addClass('animated fadeOut');
+                $("#white_paper").addClass('animated fadeOut');
             }
         } else if (choice1 === "scissors") {
             if(choice2 === "paper") {
-                // y.innerHTML = "YOU WIN";
+                $("#white_paper").addClass('animated bounceOutDown');
+                $("#black_scissor").addClass('animated pulse');
+                $("#white_rock").addClass('animated fadeOut');
+                $("#white_scissor").addClass('animated fadeOut');
+                $("#black_rock").addClass('animated fadeOut');
+                $("#black_paper").addClass('animated fadeOut');
             }
             else {
-                // y.innerHTML = "YOU LOSE";
+                $("#black_scissor").addClass('animated bounceOutUp');
+                $("#white_rock").addClass('animated pulse');
+                $("#black_paper").addClass('animated fadeOut');
+                $("#black_rock").addClass('animated fadeOut');
+                $("#white_scissor").addClass('animated fadeOut');
+                $("#white_paper").addClass('animated fadeOut');
             }
         }
     }
     compare (humanChoice, computerChoice)
 }
 
-
+function reset(){
+//reset animations 
+    //all animations with thanks daneden => http://daneden.github.io/animate.css/
+    location.reload();
+}
 
 
 

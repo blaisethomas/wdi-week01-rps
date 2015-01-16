@@ -8,16 +8,21 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script> <!-- JQUERY -->
 	</head>
 	<body>
-		<div class="text animated fadeInDown"> Choose your weapon: </div>
+		<button onClick="reset()" class="btn"> reset </button>
+		<div class="text animated fadeOutDown"> Choose from top row </div>
 		<div id="game" >
-			<img src="img/black_rock.jpg" id="black_rock" onClick="user('rock')"/>
-	    <img src="img/black_paper.jpg" id="black_paper" onClick="user('paper')"/>
-	    <img src="img/black_scissor.jpg" id="black_scissor" onClick="user('scissors')"/>
+			<img src="img/black_rock.png" id="black_rock" onClick="user('rock')"/>
+	    <img src="img/black_paper.png" id="black_paper" onClick="user('paper')"/>
+	    <img src="img/black_scissor.png" id="black_scissor" onClick="user('scissors')"/>
 		  <br/>
 		  <br/>
-	    <img src="img/white_rock.jpg" id="white_rock"/>
-	    <img src="img/white_paper.jpg" id="white_paper"/>
-	    <img src="img/white_scissor.jpg" id="white_scissor"/>
+	    <img src="img/white_scissor.png" id="white_scissor"/>
+	    
+	    <img src="img/white_rock.png" id="white_rock"/>
+	    <img src="img/white_paper.png" id="white_paper"/>
+
+	    
+	    
 
 		</div>
 	</body>
