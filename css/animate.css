@@ -197,13 +197,13 @@ Copyright (c) 2014 Daniel Eden
   }
 
   30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: scale3d(10, 0.75, 1);
+            transform: scale3d(10, 0.75, 1);
   }
 
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: scale3d(0.75, 10, 1);
+            transform: scale3d(0.75, 10, 1);
   }
 
   50% {
