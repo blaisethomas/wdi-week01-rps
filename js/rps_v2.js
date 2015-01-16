@@ -1,11 +1,8 @@
 function user(humanChoice) {
+
     console.log("you choose " + humanChoice) 
-    
-      
-
-    
-
     var computerChoice = Math.random();
+    
     if(computerChoice < 0.34) {
 	    computerChoice = "rock";
     } else if(computerChoice <= 0.67) {
@@ -70,7 +67,7 @@ function user(humanChoice) {
             }
         }
     }
-    compare (humanChoice, computerChoice)
+        compare(humanChoice, computerChoice);
 }
 
 function reset(){
