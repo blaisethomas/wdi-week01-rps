@@ -22,7 +22,7 @@
 	max-width:50px;
 	padding: 40px;
 }
-#black_scissor:hover {
+/*#black_scissor:hover {
 	border: red 10px solid;
 	border-radius: 50%;
 	padding: 30px;
@@ -36,11 +36,11 @@
 	border: red 10px solid;
 	border-radius: 50%;
 	padding: 30px;
-}
-.border {
+}*/
+/*.border {
 	border: red 10px solid;
 	border-radius: 50%;
-}
+}*/
 #button2{
 	max-width: 100px;
 	float:right;
