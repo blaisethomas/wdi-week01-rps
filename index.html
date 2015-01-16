@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html>
 	<head> 
 		<title>Rock, Paper, Scissors ! </title>
 		<link rel="stylesheet" href="css/main_style.css"/>
-		<link rel="stylesheet" href="css/animate.css">
-		<script src="js/rps_v2.js" defer></script> 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
+		<link rel="stylesheet" href="css/animate.css"> <!-- animations with thanks daneden => http://daneden.github.io/animate.css/ -->
+		<script src="js/rps_v2.js" defer></script> <!--  my JS gamelogic  --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script> <!-- JQUERY -->
 	</head>
 	<body>
 		<div class="text animated fadeInDown"> Choose your weapon: </div>
@@ -13,15 +13,11 @@
 			<img src="img/black_rock.jpg" id="black_rock" onClick="user('rock')"/>
 	    <img src="img/black_paper.jpg" id="black_paper" onClick="user('paper')"/>
 	    <img src="img/black_scissor.jpg" id="black_scissor" onClick="user('scissors')"/>
-		    <br/>
-
-		    <div>Computer chooses:</div><div id="compChoice"></div>
-		    <div id="resulting"></div>
-
-		    	
-		    <img src="img/white_rock.jpg" id="white_rock"/>
-		    <img src="img/white_paper.jpg" id="white_paper"/>
-		    <img src="img/white_scissor.jpg" id="white_scissor"/>
+		  <br/>
+		  <br/>
+	    <img src="img/white_rock.jpg" id="white_rock"/>
+	    <img src="img/white_paper.jpg" id="white_paper"/>
+	    <img src="img/white_scissor.jpg" id="white_scissor"/>
 
 		</div>
 	</body>
